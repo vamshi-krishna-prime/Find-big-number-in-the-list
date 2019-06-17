@@ -1,9 +1,13 @@
 
-list = [1, 6, 4, 3]
+list = [["a", 9], ["b", 6], ["c", 4] , ["d", 3]]
 big = 0
-for num in list:
-    big == num
-    for numb in list[num:]:
-        if numb > big:
-            big = numb
+letter = " "
+for num in list[:1]:
+    big = num[1]
+    letter = num[0]
+    for numb in list[1:]:
+        if numb[1] > big:
+            big = numb[1]
+            letter = numb[0]
 print(big)
+print(letter)
